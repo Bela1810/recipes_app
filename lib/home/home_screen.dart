@@ -18,6 +18,8 @@ class HomeScreen extends StatelessWidget{
           Recipe(),
           Recipe(),
           Recipe(),
+          Recipe(),
+          Recipe()
         ],
       )),
     );

@@ -7,8 +7,9 @@ class Recipe extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(),
+      padding: const EdgeInsets.all(8.0),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           _buildAvatarInfo(),
           SizedBox(height: 12),
@@ -26,9 +27,9 @@ class Recipe extends StatelessWidget {
           width: 42.0,
           child: Image.network('https://img.freepik.com/vector-premium/icono-perfil-simple-color-blanco-icono_1076610-50204.jpg'),
         ),
-        const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 8),
-          child: Text('Bela'),
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: 8.0),
+          child: Text('Belitaa'),
         ),
       ],
     );
@@ -36,9 +37,12 @@ class Recipe extends StatelessWidget {
 
   Widget _buildRecipeImage(){
     return Expanded(
-      child: Image.network(
-        'https://img.hellofresh.com/w_3840,q_auto,f_auto,c_fill,fl_lossy/hellofresh_website/es/cms/SEO/recipes/albondigas-caseras-de-cerdo-con-salsa-barbacoa.jpeg',
+      child : SizedBox(
+        height: 250,
+        child: Image.network('https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg/medium',
         fit: BoxFit.cover)
+
+      )
       );
   }
 
