@@ -79,7 +79,7 @@ class Recipe extends StatelessWidget {
             'Bela',
             style: TextStyle(
               color: Colors.black,
-              fontWeight: FontWeight.w500,
+              fontWeight: FontWeight.w500,  /** */
               fontSize: 16,
             ),
           ),
